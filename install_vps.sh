@@ -1,8 +1,3 @@
-wget https://www.otohits.net/dl/OtohitsApp_5068_linux_portable.tar.gz > /dev/null
-mkdir OtohitsApp
-cd OtohitsApp
-echo "/login:208a328a-578b-4e34-b400-ac0c979ac3e4" > otohits.ini
-echo "/autoupdate" >> otohits.ini
-tar -xzf ../OtohitsApp_5068_linux_portable.tar.gz
-
-./otohits-app
+apt install docker.io
+docker pull traffmonetizer/cli:latest
+docker run -i --name tm traffmonetizer/cli start accept --token rcX2TPe6GS0GDTR40LxS/9sEcn6WCz1W7beRjUPr1gE=
